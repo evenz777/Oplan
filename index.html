@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oplan - Photo Gallery</title>
+  <title>Oplan - Personal Photo Gallery</title>
   <style>
     * {
       box-sizing: border-box;
@@ -50,8 +50,18 @@
       border-radius: 8px;
       object-fit: cover;
     }
+    .video-section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
     @media (max-width: 768px) {
-      .carousel, .gallery {
+      .carousel, .gallery, .video-section {
         width: 90%;
       }
     }
@@ -67,22 +77,21 @@
       <img src="photo1.jpg" alt="Photo 1">
       <img src="photo2.jpg" alt="Photo 2">
       <img src="photo3.jpg" alt="Photo 3">
-      <img src="photo4.jpg" alt="Photo 1">
-      <img src="photo5.jpg" alt="Photo 2">
-      <img src="photo6.jpg" alt="Photo 3">
-
     </div>
   </div>
+
+  <section class="video-section">
+    <video autoplay loop muted playsinline>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
   <section class="gallery">
     <img src="special1.jpg" alt="Special Moment 1">
     <img src="special2.jpg" alt="Special Moment 2">
     <img src="special3.jpg" alt="Special Moment 3">
     <img src="special4.jpg" alt="Special Moment 4">
-    <img src="special5.jpg" alt="Special Moment 5">
-    <img src="special6.jpg" alt="Special Moment 6">
-    <img src="special7.jpg" alt="Special Moment 7">
-    <img src="special7.jpg" alt="Special Moment 8">
   </section>
 
   <script>
